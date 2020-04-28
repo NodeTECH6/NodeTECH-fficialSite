@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/*all*/
+a {
+  text-decoration:none;
+  }
+
+a:hover {
+  text-decoration:underline;
+  }
+
+h2 {
+		/* font-size:1.3vw; */
+		font-weight:bold;
+		text-align: center;
+}
+
+.main_form > h3 {
+  font-weight: bold;
+  color:#104E87;
+}
+
+.subscribe_main {
+  font-family:"Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "ＭＳ Ｐゴシック";
+  margin:0 auto;
+  height: auto;
+}
+
+ul.properties {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.properties li {
+  align-items: center;
+  background-image: none;
+		list-style-image:none;
+		/* position: relative; */
+  width: 100%;
+  height: auto;
+}
+
+.contact_infomation {
+	color:#000;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.example_text{
+	color:grey;
+	/* position: absolute; */
+}
+
+.properties_textarea {
+  resize: none;
+}
+
+.subscribe_submit {
+  text-align: center;
+}
+
+.required{
+	color: #ff0000;
+	width:13%;
+	/* position: absolute; */
+}
+
+.ageSelect {
+	margin: 0;
+}
+
+/*smartPhone*/
+@media screen and (max-width:559px) {
+h2 {
+	font-size:4vw;
+}
+
+.main_form > h3 {
+	margin-top: 3%;
+	line-height:1.2em;
+	font-size:3vw;
+	border-bottom:1px dotted #333333;
+}
+
+ .main_form {
+		width: 90%;
+	}
+
+.subscribe_main {
+	line-height:1.5em;
+	width: 80%;
+}
+
+ul.properties li {
+	padding:2% 1% 2%;
+	font-size:0.7vw;
+}
+
+.properties {
+	margin: 0 auto;
+
+}
+
+.contact_infomation {
+	width: 40%;
+	font-size: 0.7vw;
+ display: inline-flex;
+}
+
+ul.properties li input {
+	width: 70%;
+	height: 2.3vh;
+	/* margin-right: 1%; */
+	font-size: 0.8vw;
+}
+
+.ageSelect {
+	width: 40%;
+	height: 20px;
+	/* margin-right: 1%; */
+	font-size: 0.8vw;
+}
+
+.subscribe_submit {
+	margin-top: 5%;
+	padding-bottom: 8%;
+}
+
+.subscribe_submitButton {
+	width: 20%;
+	font-size: 0.8vw;
+}
+
+.properties_small {
+	font-size: 0.8vw;
+}
+
+.properties > li {
+/* float: left; */
+}
+
+}
+
+
+/*tablet*/
+@media screen and (min-width: 560px) and (max-width:959px) {
+	h2 {
+		font-size:4vw;
+		text-align: center;
+		padding-top:5%;
+	}
+
+	.main_form > h3 {
+		margin-top: 3%;
+		line-height:1.2em;
+		font-size:2.4vw;
+		border-bottom:1px dotted #333333;
+	}
+
+	.subscribe_main {
+		line-height:1.5em;
+		width: 60%;
+	}
+
+	ul.properties li {
+		padding:4% 2% 4%;
+		display: flex;
+		margin: 0 auto;
+		width: 80%;
+		border-bottom:1px solid #DFEDF9;
+		font-size:1.5vw;
+	}
+
+	.contact_infomation {
+		width:20%;
+		font-size: 1.5vw;
+	}
+
+	ul.properties li input {
+		width: 52%;
+		height: 2.2em;
+		margin-right: 1%;
+		font-size: 0.8vw;
+	}
+
+	.ageSelect {
+		width: 26%;
+		height: 20px;
+		/* margin-right: 1%; */
+		font-size: 0.8vw;
+	}
+
+	.subscribe_submit {
+		margin-top: 5%;
+		padding-bottom:10% 0 0 15%;
+	}
+
+	.subscribe_submitButton {
+		width: 20%;
+		font-size: 1.3vw;
+		margin-bottom: 3em;
+	}
+
+	.properties_small {
+		font-size: 1.2vw;
+	}
+
+	.subscribe_main {
+		padding-bottom:3em;
+	}
+}
+/*PC*/
+@media screen and (min-width: 960px) {
+ .subscribe_main {
+		/* margin-top: 10%; */
+	}
+
+	h2 {
+		font-size:2.0vw;
+		margin-top: 2vh;
+	}
+
+ .main_form {
+		padding-top: 2vh;
+		margin-bottom: 5vh;
+	}
+
+	.main_form > h3 {
+		margin-top: 3%;
+		line-height:1.2em;
+		font-size:1.5vw;
+		border-bottom:1px dotted #333333;
+	}
+
+	.subscribe_main {
+		line-height:1.5em;
+		width: 50%;
+	}
+
+	ul.properties li {
+		padding:2% 1% 2%;
+		display: flex;
+		width: 80%;
+		margin: 0 auto;
+		border-bottom:1px solid #DFEDF9;
+		font-size:0.7vw;
+	}
+
+	.contact_infomation {
+		width:20%;
+		font-size: 0.8vw;
+	}
+
+		ul.properties li input {
+		width: 52%;
+		height: 1.5em;
+		margin-right: 1%;
+		font-size: 0.8vw;
+	}
+
+	.ageSelect {
+		width: 26%;
+		height: 30px;
+		/* margin-right: 1%; */
+		font-size: 0.8vw;
+	}
+
+	.subscribe_submit {
+		margin-top: 5%;
+		padding-bottom: 8%;
+	}
+
+	.subscribe_submitButton {
+		width: 20%;
+		font-size: 0.8vw;
+	}
+
+	.properties_small {
+		font-size: 0.8vw;
+	}
+}

@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+/*all*/
+/*reset*/
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+html, body, h1, h2, h3, h4,
+ul, ol, dl, li, dt, dd, p, div, span,
+img, a, table, tr, th, td, figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, header, footer, aside, figure, figcaption, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+/*↑reset*/
+
+/*styles.css*/
+body {
+  background-color: black;
+  font-family: Impact;
+  z-index: 1;
+}
+
+.container {
+  background-color: #fcf4e5;
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clear {
+  clear: both;
+}
+
+/* main */
+.main {
+  float: right;
+  height: auto;
+  width: 100%;
+  /* ↓ToDo 背景色_要検討 */
+  background-color: #ececec;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+
+  /*↓サイドバー実装時に実装 */
+  /* z-index: 999; */
+}
+
+.svg_content1 > div > a:last-child {
+  margin: 0;
+}
+
+/*smartPhone*/
+@media screen and (max-width: 559px) {
+  
+  .home .home-button,
+  .about .about-button,
+  .contact .contact-button,
+  .login .login-button {
+  text-decoration: none;
+  color: rgb(255, 96, 144);
+}
+
+  .header_padding {
+    padding-top: 15%;
+    /* margin: 0 auto; */
+  }
+
+  /* sideBar */
+  .sideBar {
+    background-color: gray;
+    float: left;
+    height: 1000px;
+    width: 30%;
+  }
+
+  .sideBar h1 {
+    color: #f1f1f1;
+  }
+
+  .recommendMovie,
+  .newMovie,
+  .recommendColumn,
+  .newColumn {
+    width: 90%;
+  }
+
+  /* main */
+
+
+  .sec {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10vw;
+  }
+
+
+
+  .svg_text1, .svg_text2, .svg_text3, .svg_text4, .svg_text5, .svg_text6, .svg_text7, .svg_text8, .svg_text9 {
+    margin: -14% auto 0;
+    font-weight: bold;
+    /* font-size: 3.4vw; */
+    font-size: 5vw;
+    text-align: left;
+    color: #fff;
+    padding-left: 4vw;
+  }
+
+  .sec p {
+    margin: 15% 15% 0 15%;
+    font-size: 2.8vw;
+    text-align: left;
+  }
+
+  .svg_content1 > div {
+    margin: 0 0 0 15%;
+    padding-top: 1vw;
+    font-size: 1.5vw;
+  }
+
+  .svg_content1 > div > a {
+    margin: 0 1.5vw 0 0;
+  }
+
+  .sec img {
+    width: 30%;
+    height: auto;
+  }
+
+  .l-section {
+    height: 600px;
+    background: #ccc;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+    transition: opacity 1.5s, transform 1.5s;
+  }
+
+  div.main {
+    padding-bottom: 5em;
+  }
+}
+
+/*tablet*/
+@media screen and (min-width: 560px) and (max-width:959px) { /* タブレット 560〜959px */
+
+  .home .home-button,
+  .about .about-button,
+  .contact .contact-button,
+  .login .login-button {
+    text-decoration: underline;
+    color: rgb(255, 96, 144);
+  }
+
+  .header_padding {
+    padding-top: 12%;
+    /* margin: 0 auto; */
+  }
+
+  /* sideBar */
+  .sideBar {
+    background-color: gray;
+    float: left;
+    height: 1000px;
+    width: 30%;
+  }
+
+  .sideBar h1 {
+    color: #f1f1f1;
+  }
+
+  .recommendMovie,
+  .newMovie,
+  .recommendColumn,
+  .newColumn {
+    width: 90%;
+  }
+
+  /* main */
+
+
+  .sec {
+    margin-bottom: 10vw;
+  }
+
+
+
+  .svg_text1, .svg_text2, .svg_text3, .svg_text4, .svg_text5, .svg_text6, .svg_text7, .svg_text8, .svg_text9 {
+    margin: -14% auto 0;
+    font-weight: bold;
+    font-size: 5.0vw;
+    text-align: left;
+    color: #fff;
+    padding-left: 4vw;
+  }
+
+  .sec p {
+    margin: 15% 15% 0 15%;
+    font-size: 2.0vw;
+    text-align: left;
+  }
+
+  .svg_content1 > div {
+    margin: 0 0 0 15%;
+    padding-top: 1vw;
+    font-size: 1.5vw;
+  }
+
+  .svg_content1 > div > a {
+    margin: 0 1.5vw 0 0;
+  }
+
+  .sec img {
+    width: 30%;
+    height: auto;
+  }
+
+  .l-section {
+    height: 600px;
+    background: #ccc;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+    transition: opacity 1.5s, transform 1.5s;
+  }
+
+  div.main {
+  padding-bottom: 5em;
+  }
+}
+
+/*PC*/
+@media screen and (min-width: 960px) { /*PC 960px～*/
+
+  .home .home-button,
+  .about .about-button,
+  .contact .contact-button,
+  .login .login-button {
+    text-decoration: underline;
+    color: rgb(255, 96, 144);
+}
+
+  .header_padding {
+    padding-top: 8%;
+    /* margin: 0 auto; */
+  }
+
+  /* sideBar */
+  .sideBar {
+    background-color: gray;
+    float: left;
+    height: 1000px;
+    width: 30%;
+  }
+
+  .sideBar h1 {
+    color: #f1f1f1;
+  }
+
+  .recommendMovie,
+  .newMovie,
+  .recommendColumn,
+  .newColumn {
+    width: 90%;
+  }
+
+  /* main */
+
+
+  .sec {
+    margin-bottom: 10vw;
+  }
+
+
+
+  .svg_text1, .svg_text2, .svg_text3, .svg_text4, .svg_text5, .svg_text6, .svg_text7, .svg_text8, .svg_text9 {
+    margin: -14% auto 0;
+    font-weight: bold;
+    font-size: 3.4vw;
+    text-align: left;
+    color: #fff;
+    padding-left: 4vw;
+  }
+
+  .sec p {
+    margin: 15% 15% 0 15%;
+    font-size: 1.5vw;
+    text-align: left;
+  }
+
+  .svg_content1 > div {
+    margin: 0 0 0 15%;
+    padding-top: 1vw;
+    font-size: 1.5vw;
+  }
+
+  .svg_content1 > div > a {
+    margin: 0 1.5vw 0 0;
+  }
+
+  .sec img {
+    width: 30%;
+    height: auto;
+  }
+
+  .l-section {
+    height: 600px;
+    background: #ccc;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+    transition: opacity 1.5s, transform 1.5s;
+  }
+
+  div.main {
+    padding-bottom: 5em;
+  }
+
+}

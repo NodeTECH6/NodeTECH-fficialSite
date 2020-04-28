@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node TECH.のOfficial_site</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/about.css"/>
+    <link rel="stylesheet" href="css/d-clock.css" />
+    <link rel="stylesheet" href="css/login_pop.css"/>
+    <link rel="stylesheet" href="css/contact_pop.css" />
+    <link rel="stylesheet" href="css/toPageTop.css" />
+    <link rel="stylesheet" href="css/svg_animation.css" />
+    <link rel="stylesheet" href="css/floatingActionShareButton.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript" src="js/d-clock.js"></script>
+  </head>
+
+  <body class="about">
+    <div class="container">
+      <header class="header">
+        <div id="page_top"><a href="#"></a></div>
+        <div id="header_container">
+          <div class="header_left">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Node TECH.のロゴ" class="logo"/>
+            </a>
+          </div>
+          <div class="header_center">
+            <a href="about.html#node_tech"><img src="images/icon.png" alt="Node TECH.のアイコン" class="icon"/></a>
+          </div>
+          <div class="header_right">
+            <ul>
+              <li>
+                <a href="index.html" class="home-button">HOME</a>
+              </li>
+              <li>
+                <a href="about.html" class="about-button">ABOUT</a>
+              </li>
+              <li>
+                <div class="contact_popupModal1">
+                  <input type="radio" name="modalPop" id="contact_pop11" />
+                  <label for="contact_pop11" class="contact_button">CONTACT</label>
+                  <input type="radio" name="modalPop" id="contact_pop12" />
+                  <label for="contact_pop12">CLOSE</label>
+                  <input type="radio" name="modalPop" id="contact_pop13" />
+                  <label for="contact_pop13">×</label>
+                  <div class="contact_modalPopup2">
+                    <div class="contact_modalPopup3">
+                      <h2 class="contact_title">お問い合わせ</h2>
+                      <div class="contact_container">
+                        <form class="contact_form">
+                          <div class="contact_input">
+                            <h3>氏名</h3>
+                            <input type="text">
+                            <h3>メールアドレス</h3>
+                            <input type="email">
+                          </div>
+                            <h3>種類</h3>
+                            <select>
+                              <option value="">やってほしい企画</option>
+                              <option value="">応援メッセージ</option>
+                              <option value="">不適切な動画</option>
+                              <option value="">コラボの依頼</option>
+                              <option value="">仕事の依頼</option>
+                              <option value="">その他</option>
+                            </select>
+                            <h3>内容</h3>
+                            <textarea class="contact_textarea" rows="8" cols="80"></textarea>
+                          <br>
+                          <div class="contact_submit_wrap">
+                            <input type="submit" class="contact_submit_button">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="login_popupModal1">
+                  <input type="radio" name="modalPop" id="login_pop11" />
+                  <label for="login_pop11" class="login_button">LOGIN</label>
+                  <input type="radio" name="modalPop" id="login_pop12" />
+                  <label for="login_pop12">CLOSE</label>
+                  <input type="radio" name="modalPop" id="login_pop13" />
+                  <label for="login_pop13">×</label>
+                  <div class="login_modalPopup2">
+                    <div class="login_modalPopup3">
+                      <h2 class="login_title">ログイン画面</h2>
+                      <div class="login_container">
+                        <form class="login_form">
+                          <div class="login_input">
+                            <h3 class="login_id_text">ログインID</h3>
+                            <input type="text">
+                            <h3 class="login_pass_text">パスワード</h3>
+                            <input type="password">
+                          </div>
+                          <br>
+                          <div class="login_submit_wrap">
+                            <input type="submit" onclick="location.href='index.html'" value="ログイン" class="login_submit_button">
+                            <input type="button" onclick="location.href='subscribe.html'" value="新規ユーザー登録" class="login_submit_button">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="global-nav">
+          <ul class="global-nav__list">
+            <li class="global-nav__item">
+              <a href="index.html" class="home-button">HOME</a>
+            </li>
+            <li class="global-nav__item">
+              <a href="about.html" class="about-button">ABOUT</a>
+            </li>
+            <li class="global-nav__item">
+              <div class="mobile_contact_popupModal1">
+                <input type="radio" name="modalPop" id="mobile_contact_pop11" />
+                <label for="mobile_contact_pop11" class="mobile_contact_button">CONTACT</label>
+                <input type="radio" name="modalPop" id="mobile_contact_pop12" />
+                <label for="mobile_contact_pop12">CLOSE</label>
+                <input type="radio" name="modalPop" id="mobile_contact_pop13" />
+                <label for="mobile_contact_pop13">×</label>
+                <div class="mobile_contact_modalPopup2">
+                  <div class="mobile_contact_modalPopup3">
+                    <h2 class="mobile_contact_title">お問い合わせ</h2>
+                    <div class="mobile_contact_container">
+                      <form class="mobile_contact_form">
+                        <div class="mobile_contact_input">
+                          <h3>氏名</h3>
+                          <input type="text">
+                          <h3>メールアドレス</h3>
+                          <input type="email">
+                        </div>
+                          <h3>種類</h3>
+                          <select>
+                            <option value="">やってほしい企画</option>
+                            <option value="">応援メッセージ</option>
+                            <option value="">不適切な動画</option>
+                            <option value="">コラボの依頼</option>
+                            <option value="">仕事の依頼</option>
+                            <option value="">その他</option>
+                          </select>
+                          <h3>内容</h3>
+                        <textarea class="mobile_contact_textarea" rows="8" cols="80"></textarea>
+                        <br>
+                        <div class="mobile_contact_submit_wrap">
+                          <input type="submit" class="mobile_contact_submit_button">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <div class="mobile_login_popupModal1">
+                <input type="radio" name="modalPop" id="mobile_login_pop11" />
+                <label for="mobile_login_pop11" class="mobile_login_button">LOGIN</label>
+                <input type="radio" name="modalPop" id="mobile_login_pop12" />
+                <label for="mobile_login_pop12">CLOSE</label>
+                <input type="radio" name="modalPop" id="mobile_login_pop13" />
+                <label for="mobile_login_pop13">×</label>
+                <div class="mobile_login_modalPopup2">
+                  <div class="mobile_login_modalPopup3">
+                    <h2 class="mobile_login_title">ログイン画面</h2>
+                    <div class="mobile_login_container">
+                      <form class="mobile_login_form">
+                        <div class="mobile_login_input">
+                          <h3 class="mobile_login_id_text">ログインID</h3>
+                          <input type="text">
+                          <h3 class="mobile_login_pass_text">パスワード</h3>
+                          <input type="password">
+                        </div>
+                        <br>
+                        <div class="mobile_login_submit_wrap">
+                          <input type="submit" onclick="location.href='index.html'" value="ログイン" class="mobile_login_submit_button">
+                          <input type="button" onclick="location.href='subscribe.html'" value="新規ユーザー登録" class="mobile_login_submit_button">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <a class="global-nav__item_fontsize" href="index.html#new_movie">
+                最新動画
+              </a>
+            </li>
+            <li class="global-nav__item">
+              <a class="global-nav__item_fontsize" href="index.html#new_column">
+                最新コラム
+              </a>
+            </li>
+            <li class="global-nav__item">
+              <div class="sidebar_search">
+                <form id="form" action="自分のサイトURL" method="get">
+                  <input id="sbox"  id="s" name="s" type="text" placeholder="フリーワードを入力"/>
+                  <button type="submit" id="sbtn"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <div class="sidebar_category">
+                <p><i class="fas fa-globe-asia"></i>カテゴリー</p>
+                <div class="cp_ipselect cp_sl04">
+                  <select id="sidebar_category__menu" class="sidebar_category__menu" name="sidebar_category">
+                    <option value="" hidden>選択してください</option>
+                    <option value="イチゴ">イチゴ</option>
+                    <option value="みかん">みかん</option>
+                    <option value="りんご">りんご</option>
+                    <option value="メロン">メロン</option>
+                    <option value="バナナ">バナナ</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <div class="sidebar_tag">
+                <p><i class="fas fa-tags"></i>タグ</p>
+                <div class="cp_ipselect cp_sl04">
+                  <select id="sidebar_tag__menu" class="sidebar_tag__menu" name="sidebar_tag">
+                    <option value="" hidden>選択してください</option>
+                    <option value="イチゴ">イチゴ</option>
+                    <option value="みかん">みかん</option>
+                    <option value="りんご">りんご</option>
+                    <option value="メロン">メロン</option>
+                    <option value="バナナ">バナナ</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+      </header>
+      <script type="text/javascript" src="js/hunburger.js"></script>
+        <div class="z-index_test1">
+          <div class="about_video">
+            <video class="about_video_item" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.jpg" playsinline autoplay muted loop>
+              <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm" type="video/webm">
+              <source src="http://thenewcode.com/assets/videos/fashion.mp4" type="video/mp4">
+            </video>
+            <section id="overlay">
+              <div class="about_video_text">
+                <h2>NodeTECH.</h2>
+                <h2>メンバー紹介</h2>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="z-index_test">
+          <div id="date"></div>
+          <div id="msgArea">
+            <div id="msg"></div>
+            <div id="dClock"></div>
+          </div>
+          <div class="main">
+            <div id="node_tech"></div>
+            <section class="sec">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+                <polygon class="animation1" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+                <polygon class="animation2" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+                <defs>
+                  <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#008ec6" />
+                    <stop offset="0.249" stop-color="#00578a" />
+                    <stop offset="0.512" stop-color="#008dbd" />
+                    <stop offset="1" stop-color="#004673" />
+                  </linearGradient>
+                  <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201716" />
+                    <stop offset="0.001" stop-color="#201716" />
+                    <stop offset="0.064" stop-color="#221918" />
+                    <stop offset="0.086" stop-color="#281f1f" />
+                    <stop offset="0.103" stop-color="#322b2a" />
+                    <stop offset="0.116" stop-color="#413b3b" />
+                    <stop offset="0.127" stop-color="#545151" />
+                    <stop offset="0.137" stop-color="#6c6b6d" />
+                    <stop offset="0.145" stop-color="#878a8c" />
+                    <stop offset="0.15" stop-color="#999da0" />
+                    <stop offset="0.161" stop-color="#85888a" />
+                    <stop offset="0.179" stop-color="#6d6e6f" />
+                    <stop offset="0.199" stop-color="#595859" />
+                    <stop offset="0.222" stop-color="#4a4848" />
+                    <stop offset="0.251" stop-color="#3f3c3d" />
+                    <stop offset="0.292" stop-color="#393636" />
+                    <stop offset="0.405" stop-color="#373434" />
+                    <stop offset="0.517" stop-color="#201716" />
+                    <stop offset="0.63" stop-color="#201716" />
+                    <stop offset="0.649" stop-color="#201716" />
+                    <stop offset="0.679" stop-color="#231b1a" />
+                    <stop offset="0.708" stop-color="#2c2625" />
+                    <stop offset="0.736" stop-color="#3c3838" />
+                    <stop offset="0.763" stop-color="#525253" />
+                    <stop offset="0.766" stop-color="#555657" />
+                    <stop offset="0.793" stop-color="#423f3f" />
+                    <stop offset="0.823" stop-color="#332d2d" />
+                    <stop offset="0.859" stop-color="#282120" />
+                    <stop offset="0.906" stop-color="#221918" />
+                    <stop offset="1" stop-color="#201716" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h2 id="svg_text" class="svg_text1"><img src="images/logo.png" alt="Node TECH."></h2>
+              <div class="svg_content1">
+                <p>
+                  活動目的：<br/>
+                  由来：<br/>
+                  メンバー：<br/>
+                </p>
+                <div>
+                  <a href="#morichan" class="btn-square">もりちゃん</a>
+                  <a href="#yuya" class="btn-square">ゆうや</a>
+                  <a href="#yuki" class="btn-square">ゆうき</a>
+                  <a href="#kota" class="btn-square">こうた</a>
+                  <br>
+                  <a href="#yamaren" class="btn-square">やまれん</a>
+                  <a href="#asaki" class="btn-square">あさき</a>
+                  <a href="#takki-" class="btn-square">たっきー</a>
+                  <a href="#dagon" class="btn-square">だごん</a>
+                </div>
+              </div>
+            </section>
+            <div id="morichan"></div>
+            <section class="sec">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+                <polygon class="animation3" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+                <polygon class="animation4" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+                <defs>
+                  <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#008ec6" />
+                    <stop offset="0.249" stop-color="#00578a" />
+                    <stop offset="0.512" stop-color="#008dbd" />
+                    <stop offset="1" stop-color="#004673" />
+                  </linearGradient>
+                  <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201716" />
+                    <stop offset="0.001" stop-color="#201716" />
+                    <stop offset="0.064" stop-color="#221918" />
+                    <stop offset="0.086" stop-color="#281f1f" />
+                    <stop offset="0.103" stop-color="#322b2a" />
+                    <stop offset="0.116" stop-color="#413b3b" />
+                    <stop offset="0.127" stop-color="#545151" />
+                    <stop offset="0.137" stop-color="#6c6b6d" />
+                    <stop offset="0.145" stop-color="#878a8c" />
+                    <stop offset="0.15" stop-color="#999da0" />
+                    <stop offset="0.161" stop-color="#85888a" />
+                    <stop offset="0.179" stop-color="#6d6e6f" />
+                    <stop offset="0.199" stop-color="#595859" />
+                    <stop offset="0.222" stop-color="#4a4848" />
+                    <stop offset="0.251" stop-color="#3f3c3d" />
+                    <stop offset="0.292" stop-color="#393636" />
+                    <stop offset="0.405" stop-color="#373434" />
+                    <stop offset="0.517" stop-color="#201716" />
+                    <stop offset="0.63" stop-color="#201716" />
+                    <stop offset="0.649" stop-color="#201716" />
+                    <stop offset="0.679" stop-color="#231b1a" />
+                    <stop offset="0.708" stop-color="#2c2625" />
+                    <stop offset="0.736" stop-color="#3c3838" />
+                    <stop offset="0.763" stop-color="#525253" />
+                    <stop offset="0.766" stop-color="#555657" />
+                    <stop offset="0.793" stop-color="#423f3f" />
+                    <stop offset="0.823" stop-color="#332d2d" />
+                    <stop offset="0.859" stop-color="#282120" />
+                    <stop offset="0.906" stop-color="#221918" />
+                    <stop offset="1" stop-color="#201716" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h2 id="svg_text" class="svg_text2 outline_color_black color_morichan">もりちゃん</h2>
+              <p class="svg_content2">
+                おなまけタイムの立ち上げメンバー。<br/>
+                おなまけタイムのメンバーとして、ゆうや・やまれん・たっきーと共に活動。<br/>
+                おなまけタイム解散後、ゆうき・あさきと共に、ゆうや・やまれん・こうたを誘い、<br/>
+                Node TECH.の立ち上げメンバーに。
+              </p>
+            </section>
+            <div id="yuya"></div>
+            <section class="sec">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+                <polygon class="animation5" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+                <polygon class="animation6" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+                <defs>
+                  <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#008ec6" />
+                    <stop offset="0.249" stop-color="#00578a" />
+                    <stop offset="0.512" stop-color="#008dbd" />
+                    <stop offset="1" stop-color="#004673" />
+                  </linearGradient>
+                  <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201716" />
+                    <stop offset="0.001" stop-color="#201716" />
+                    <stop offset="0.064" stop-color="#221918" />
+                    <stop offset="0.086" stop-color="#281f1f" />
+                    <stop offset="0.103" stop-color="#322b2a" />
+                    <stop offset="0.116" stop-color="#413b3b" />
+                    <stop offset="0.127" stop-color="#545151" />
+                    <stop offset="0.137" stop-color="#6c6b6d" />
+                    <stop offset="0.145" stop-color="#878a8c" />
+                    <stop offset="0.15" stop-color="#999da0" />
+                    <stop offset="0.161" stop-color="#85888a" />
+                    <stop offset="0.179" stop-color="#6d6e6f" />
+                    <stop offset="0.199" stop-color="#595859" />
+                    <stop offset="0.222" stop-color="#4a4848" />
+                    <stop offset="0.251" stop-color="#3f3c3d" />
+                    <stop offset="0.292" stop-color="#393636" />
+                    <stop offset="0.405" stop-color="#373434" />
+                    <stop offset="0.517" stop-color="#201716" />
+                    <stop offset="0.63" stop-color="#201716" />
+                    <stop offset="0.649" stop-color="#201716" />
+                    <stop offset="0.679" stop-color="#231b1a" />
+                    <stop offset="0.708" stop-color="#2c2625" />
+                    <stop offset="0.736" stop-color="#3c3838" />
+                    <stop offset="0.763" stop-color="#525253" />
+                    <stop offset="0.766" stop-color="#555657" />
+                    <stop offset="0.793" stop-color="#423f3f" />
+                    <stop offset="0.823" stop-color="#332d2d" />
+                    <stop offset="0.859" stop-color="#282120" />
+                    <stop offset="0.906" stop-color="#221918" />
+                    <stop offset="1" stop-color="#201716" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h2 id="svg_text" class="svg_text3 outline_color_black color_yuya">ゆうや</h2>
+              <p class="svg_content3">
+                おなまけタイムの立ち上げメンバー。<br/>
+                おなまけタイムのリーダーとして、もりちゃん・やまれん・たっきーと共に活動。<br/>
+                おなまけタイム解散後、もりちゃん・ゆうき・あさきに誘われ、<br/>
+                Node TECH.の立ち上げメンバーに。
+              </p>
+            </section>
+            <div id="yuki"></div>
+            <section class="sec">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+                <polygon class="animation7" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+                <polygon class="animation8" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+                <defs>
+                  <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#008ec6" />
+                    <stop offset="0.249" stop-color="#00578a" />
+                    <stop offset="0.512" stop-color="#008dbd" />
+                    <stop offset="1" stop-color="#004673" />
+                  </linearGradient>
+                  <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201716" />
+                    <stop offset="0.001" stop-color="#201716" />
+                    <stop offset="0.064" stop-color="#221918" />
+                    <stop offset="0.086" stop-color="#281f1f" />
+                    <stop offset="0.103" stop-color="#322b2a" />
+                    <stop offset="0.116" stop-color="#413b3b" />
+                    <stop offset="0.127" stop-color="#545151" />
+                    <stop offset="0.137" stop-color="#6c6b6d" />
+                    <stop offset="0.145" stop-color="#878a8c" />
+                    <stop offset="0.15" stop-color="#999da0" />
+                    <stop offset="0.161" stop-color="#85888a" />
+                    <stop offset="0.179" stop-color="#6d6e6f" />
+                    <stop offset="0.199" stop-color="#595859" />
+                    <stop offset="0.222" stop-color="#4a4848" />
+                    <stop offset="0.251" stop-color="#3f3c3d" />
+                    <stop offset="0.292" stop-color="#393636" />
+                    <stop offset="0.405" stop-color="#373434" />
+                    <stop offset="0.517" stop-color="#201716" />
+                    <stop offset="0.63" stop-color="#201716" />
+                    <stop offset="0.649" stop-color="#201716" />
+                    <stop offset="0.679" stop-color="#231b1a" />
+                    <stop offset="0.708" stop-color="#2c2625" />
+                    <stop offset="0.736" stop-color="#3c3838" />
+                    <stop offset="0.763" stop-color="#525253" />
+                    <stop offset="0.766" stop-color="#555657" />
+                    <stop offset="0.793" stop-color="#423f3f" />
+                    <stop offset="0.823" stop-color="#332d2d" />
+                    <stop offset="0.859" stop-color="#282120" />
+                    <stop offset="0.906" stop-color="#221918" />
+                    <stop offset="1" stop-color="#201716" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h2 id="svg_text" class="svg_text4 outline_color_black color_yuki">ゆうき</h2>
+              <p class="svg_content4">
+                Indualにてゆうきと共に活動。<br/>
+                Indual解散後、もりちゃん・あさきと共に、ゆうや・やまれん・こうたを誘い、<br/>
+                Node TECH.の立ち上げメンバーに。
+              </p>
+            </section>
+            <div id="kota"></div>
+            <section class="sec">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+                <polygon class="animation9" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+                <polygon class="animation10" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+                <defs>
+                  <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#008ec6" />
+                    <stop offset="0.249" stop-color="#00578a" />
+                    <stop offset="0.512" stop-color="#008dbd" />
+                    <stop offset="1" stop-color="#004673" />
+                  </linearGradient>
+                  <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201716" />
+                    <stop offset="0.001" stop-color="#201716" />
+                    <stop offset="0.064" stop-color="#221918" />
+                    <stop offset="0.086" stop-color="#281f1f" />
+                    <stop offset="0.103" stop-color="#322b2a" />
+                    <stop offset="0.116" stop-color="#413b3b" />
+                    <stop offset="0.127" stop-color="#545151" />
+                    <stop offset="0.137" stop-color="#6c6b6d" />
+                    <stop offset="0.145" stop-color="#878a8c" />
+                    <stop offset="0.15" stop-color="#999da0" />
+                    <stop offset="0.161" stop-color="#85888a" />
+                    <stop offset="0.179" stop-color="#6d6e6f" />
+                    <stop offset="0.199" stop-color="#595859" />
+                    <stop offset="0.222" stop-color="#4a4848" />
+                    <stop offset="0.251" stop-color="#3f3c3d" />
+                    <stop offset="0.292" stop-color="#393636" />
+                    <stop offset="0.405" stop-color="#373434" />
+                    <stop offset="0.517" stop-color="#201716" />
+                    <stop offset="0.63" stop-color="#201716" />
+                    <stop offset="0.649" stop-color="#201716" />
+                    <stop offset="0.679" stop-color="#231b1a" />
+                    <stop offset="0.708" stop-color="#2c2625" />
+                    <stop offset="0.736" stop-color="#3c3838" />
+                    <stop offset="0.763" stop-color="#525253" />
+                    <stop offset="0.766" stop-color="#555657" />
+                    <stop offset="0.793" stop-color="#423f3f" />
+                    <stop offset="0.823" stop-color="#332d2d" />
+                    <stop offset="0.859" stop-color="#282120" />
+                    <stop offset="0.906" stop-color="#221918" />
+                    <stop offset="1" stop-color="#201716" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h2 id="svg_text" class="svg_text5 outline_color_black color_kota">こうた</h2>
+              <p class="svg_content5">
+                本名は、さとぅん・コタティス・G・쵸무니다。<br/>
+                幻のユニットさんバカらいす立ち上げ時に参加。<br/>
+                さんバカらいすのメンバーとして、ゆうや・やまれん・もりちゃんと共に活動。<br/>
+                関東編の動画に初出演。<br/>
+                メンバー全員の多忙さにより、さんバカらいすが解散した後、もりちゃん・ゆうき・あさきに誘われ、<br/>
+                Node TECH.の立ち上げメンバーに。
+              </p>
+            </section>
+            <div id="yamaren"></div>
+            <section class="sec">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+                <polygon class="animation11" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+                <polygon class="animation12" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+                <defs>
+                  <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#008ec6" />
+                    <stop offset="0.249" stop-color="#00578a" />
+                    <stop offset="0.512" stop-color="#008dbd" />
+                    <stop offset="1" stop-color="#004673" />
+                  </linearGradient>
+                  <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201716" />
+                    <stop offset="0.001" stop-color="#201716" />
+                    <stop offset="0.064" stop-color="#221918" />
+                    <stop offset="0.086" stop-color="#281f1f" />
+                    <stop offset="0.103" stop-color="#322b2a" />
+                    <stop offset="0.116" stop-color="#413b3b" />
+                    <stop offset="0.127" stop-color="#545151" />
+                    <stop offset="0.137" stop-color="#6c6b6d" />
+                    <stop offset="0.145" stop-color="#878a8c" />
+                    <stop offset="0.15" stop-color="#999da0" />
+                    <stop offset="0.161" stop-color="#85888a" />
+                    <stop offset="0.179" stop-color="#6d6e6f" />
+                    <stop offset="0.199" stop-color="#595859" />
+                    <stop offset="0.222" stop-color="#4a4848" />
+                    <stop offset="0.251" stop-color="#3f3c3d" />
+                    <stop offset="0.292" stop-color="#393636" />
+                    <stop offset="0.405" stop-color="#373434" />
+                    <stop offset="0.517" stop-color="#201716" />
+                    <stop offset="0.63" stop-color="#201716" />
+                    <stop offset="0.649" stop-color="#201716" />
+                    <stop offset="0.679" stop-color="#231b1a" />
+                    <stop offset="0.708" stop-color="#2c2625" />
+                    <stop offset="0.736" stop-color="#3c3838" />
+                    <stop offset="0.763" stop-color="#525253" />
+                    <stop offset="0.766" stop-color="#555657" />
+                    <stop offset="0.793" stop-color="#423f3f" />
+                    <stop offset="0.823" stop-color="#332d2d" />
+                    <stop offset="0.859" stop-color="#282120" />
+                    <stop offset="0.906" stop-color="#221918" />
+                    <stop offset="1" stop-color="#201716" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h2 id="svg_text" class="svg_text6 outline_color_black color_yamaren">やまれん</h2>
+              <p class="svg_content6">
+                おなまけタイムの立ち上げメンバー。<br/>
+                おなまけタイムのメンバーとして、ゆうや・もりちゃん・たっきーと共に活動。<br/>
+                おなまけタイム解散後、もりちゃん・ゆうき・あさきに誘われ、<br/>
+                Node TECH.の立ち上げメンバーに。<br/>
+                現在は、夢を追い遠くへ行ってしまったため、レアキャラと化している。
+              </p>
+            </section>
+            <div id="asaki"></div>
+            <section class="sec">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+                <polygon class="animation13" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+                <polygon class="animation14" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+                <defs>
+                  <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#008ec6" />
+                    <stop offset="0.249" stop-color="#00578a" />
+                    <stop offset="0.512" stop-color="#008dbd" />
+                    <stop offset="1" stop-color="#004673" />
+                  </linearGradient>
+                  <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201716" />
+                    <stop offset="0.001" stop-color="#201716" />
+                    <stop offset="0.064" stop-color="#221918" />
+                    <stop offset="0.086" stop-color="#281f1f" />
+                    <stop offset="0.103" stop-color="#322b2a" />
+                    <stop offset="0.116" stop-color="#413b3b" />
+                    <stop offset="0.127" stop-color="#545151" />
+                    <stop offset="0.137" stop-color="#6c6b6d" />
+                    <stop offset="0.145" stop-color="#878a8c" />
+                    <stop offset="0.15" stop-color="#999da0" />
+                    <stop offset="0.161" stop-color="#85888a" />
+                    <stop offset="0.179" stop-color="#6d6e6f" />
+                    <stop offset="0.199" stop-color="#595859" />
+                    <stop offset="0.222" stop-color="#4a4848" />
+                    <stop offset="0.251" stop-color="#3f3c3d" />
+                    <stop offset="0.292" stop-color="#393636" />
+                    <stop offset="0.405" stop-color="#373434" />
+                    <stop offset="0.517" stop-color="#201716" />
+                    <stop offset="0.63" stop-color="#201716" />
+                    <stop offset="0.649" stop-color="#201716" />
+                    <stop offset="0.679" stop-color="#231b1a" />
+                    <stop offset="0.708" stop-color="#2c2625" />
+                    <stop offset="0.736" stop-color="#3c3838" />
+                    <stop offset="0.763" stop-color="#525253" />
+                    <stop offset="0.766" stop-color="#555657" />
+                    <stop offset="0.793" stop-color="#423f3f" />
+                    <stop offset="0.823" stop-color="#332d2d" />
+                    <stop offset="0.859" stop-color="#282120" />
+                    <stop offset="0.906" stop-color="#221918" />
+                    <stop offset="1" stop-color="#201716" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h2 id="svg_text" class="svg_text7 outline_color_black color_asaki">あさき</h2>
+              <p class="svg_content7">
+                Indualにてゆうきと共に活動。<br/>
+                Indual解散後、Node TECH.の立ち上げメンバーに。<br/>
+                しかし、仕事の影響により、しばらくの間、音信不通に。<br/>
+                現在は、連絡を取ることができる。<br/>
+                しかし、未だにゴーストメンバーと化している。<br/>
+                次回の旅(中部地方編)にて、復活の予感。
+              </p>
+            </section>
+            <div id="takki-"></div>
+            <section class="sec">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+                <polygon class="animation15" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+                <polygon class="animation16" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+                <defs>
+                  <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#008ec6" />
+                    <stop offset="0.249" stop-color="#00578a" />
+                    <stop offset="0.512" stop-color="#008dbd" />
+                    <stop offset="1" stop-color="#004673" />
+                  </linearGradient>
+                  <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201716" />
+                    <stop offset="0.001" stop-color="#201716" />
+                    <stop offset="0.064" stop-color="#221918" />
+                    <stop offset="0.086" stop-color="#281f1f" />
+                    <stop offset="0.103" stop-color="#322b2a" />
+                    <stop offset="0.116" stop-color="#413b3b" />
+                    <stop offset="0.127" stop-color="#545151" />
+                    <stop offset="0.137" stop-color="#6c6b6d" />
+                    <stop offset="0.145" stop-color="#878a8c" />
+                    <stop offset="0.15" stop-color="#999da0" />
+                    <stop offset="0.161" stop-color="#85888a" />
+                    <stop offset="0.179" stop-color="#6d6e6f" />
+                    <stop offset="0.199" stop-color="#595859" />
+                    <stop offset="0.222" stop-color="#4a4848" />
+                    <stop offset="0.251" stop-color="#3f3c3d" />
+                    <stop offset="0.292" stop-color="#393636" />
+                    <stop offset="0.405" stop-color="#373434" />
+                    <stop offset="0.517" stop-color="#201716" />
+                    <stop offset="0.63" stop-color="#201716" />
+                    <stop offset="0.649" stop-color="#201716" />
+                    <stop offset="0.679" stop-color="#231b1a" />
+                    <stop offset="0.708" stop-color="#2c2625" />
+                    <stop offset="0.736" stop-color="#3c3838" />
+                    <stop offset="0.763" stop-color="#525253" />
+                    <stop offset="0.766" stop-color="#555657" />
+                    <stop offset="0.793" stop-color="#423f3f" />
+                    <stop offset="0.823" stop-color="#332d2d" />
+                    <stop offset="0.859" stop-color="#282120" />
+                    <stop offset="0.906" stop-color="#221918" />
+                    <stop offset="1" stop-color="#201716" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h2 id="svg_text" class="svg_text8 outline_color_black color_takki-">たっきー</h2>
+              <p class="svg_content8">
+                おなまけタイムの立ち上げメンバー。<br/>
+                おなまけタイムのメンバーとして、ゆうや・もりちゃん・たっきーと共に活動。<br/>
+                おなまけタイム解散と同時に脱退。<br/>
+                すごく頭がいい。<br/>
+                何かとすぐにゆうやと意見が対立する。<br/>
+                ベトナム編の動画においても、バチバチに対立していた。<br/>
+                次回の旅(中部地方編)にて、限定復活の予感。
+              </p>
+            </section>
+            <div id="dagon"></div>
+            <section class="sec">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+                <polygon class="animation17" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+                <polygon class="animation18" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+                <defs>
+                  <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#008ec6" />
+                    <stop offset="0.249" stop-color="#00578a" />
+                    <stop offset="0.512" stop-color="#008dbd" />
+                    <stop offset="1" stop-color="#004673" />
+                  </linearGradient>
+                  <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201716" />
+                    <stop offset="0.001" stop-color="#201716" />
+                    <stop offset="0.064" stop-color="#221918" />
+                    <stop offset="0.086" stop-color="#281f1f" />
+                    <stop offset="0.103" stop-color="#322b2a" />
+                    <stop offset="0.116" stop-color="#413b3b" />
+                    <stop offset="0.127" stop-color="#545151" />
+                    <stop offset="0.137" stop-color="#6c6b6d" />
+                    <stop offset="0.145" stop-color="#878a8c" />
+                    <stop offset="0.15" stop-color="#999da0" />
+                    <stop offset="0.161" stop-color="#85888a" />
+                    <stop offset="0.179" stop-color="#6d6e6f" />
+                    <stop offset="0.199" stop-color="#595859" />
+                    <stop offset="0.222" stop-color="#4a4848" />
+                    <stop offset="0.251" stop-color="#3f3c3d" />
+                    <stop offset="0.292" stop-color="#393636" />
+                    <stop offset="0.405" stop-color="#373434" />
+                    <stop offset="0.517" stop-color="#201716" />
+                    <stop offset="0.63" stop-color="#201716" />
+                    <stop offset="0.649" stop-color="#201716" />
+                    <stop offset="0.679" stop-color="#231b1a" />
+                    <stop offset="0.708" stop-color="#2c2625" />
+                    <stop offset="0.736" stop-color="#3c3838" />
+                    <stop offset="0.763" stop-color="#525253" />
+                    <stop offset="0.766" stop-color="#555657" />
+                    <stop offset="0.793" stop-color="#423f3f" />
+                    <stop offset="0.823" stop-color="#332d2d" />
+                    <stop offset="0.859" stop-color="#282120" />
+                    <stop offset="0.906" stop-color="#221918" />
+                    <stop offset="1" stop-color="#201716" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h2 id="svg_text" class="svg_text9 outline_color_black color_dagon">だごん</h2>
+              <p class="svg_content9">
+                おなまけタイム時代、ベトナム編の動画に出演。<br/>
+                基本無口。<br/>
+                ホーチミン空港到着早々にパスポートをなくすなど、おっちょこちょいな部分も！<br/>
+                ベトナムでは主にカメラマンを担当していた。
+              </p>
+            <div class="footer-padding"></div>
+            </section>
+            <script src="https://codepen.io/ayausaspirit/pen/xLJQVg.js"></script>
+            <script type="text/javascript" src="js/about_svg_animation.js"></script>
+          </div>
+      <div class="fabs">
+        <a href="https://www.nicovideo.jp/user/92853960" target="_blank" class="fab1 grey" tooltip="ニコニコ動画"><img
+            class="icon-nikoniko" src="images/nikoniko.png" alt="ニコニコ動画"></a>
+        <a href="" target="_blank" class="fab1 pink" tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/NodeTECH2019?ref_src=twsrc%5Etfw" target="_blank" class="fab1 light-blue"
+          tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCS8JxE06LcjAMMx4YkuwhQQ?sub_confirmation=1" target="_blank" class="fab1 red"
+          tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+        <a target="_blank" class="fas fab1 light-red" tooltip="Share"><i class="fas fa-plus"></i></a>
+      </div>
+      <footer class="footer">
+        <div class="footer_topbox">
+          <div class="footer_search">
+            <i class="fas fa-search"></i>
+            <!-- <p class="footer_searchText">検索</p> -->
+            <form id="form" action="自分のサイトURL" method="get">
+              <input id="sbox" id="s" name="s" type="text" placeholder="フリーワードを入力" />
+              <button id="sbtn" type="submit"></button>
+            </form>
+          </div>
+          <div class="footer_category">
+            <i class="fas fa-globe-asia"></i>
+            <p class="footer_categoryText">カテゴリー</p>
+            <div class="cp_ipselect cp_sl04">
+              <select id="footer_category__menu" class="footer_category__menu" name="footer_category">
+                <option value="" hidden>選択してください</option>
+                <option value="イチゴ">イチゴ</option>
+                <option value="みかん">みかん</option>
+                <option value="りんご">りんご</option>
+                <option value="メロン">メロン</option>
+                <option value="バナナ">バナナ</option>
+              </select>
+            </div>
+          </div>
+          <div class="footer_tag">
+            <i class="fas fa-tags"></i>
+            <p class="footer_tagText">タグ</p>
+            <div class="cp_ipselect cp_sl04">
+              <select id="footer_tag__menu" class="footer_tag__menu" name="footer_tag">
+                <option value="" hidden>選択してください</option>
+                <option value="イチゴ">イチゴ</option>
+                <option value="みかん">みかん</option>
+                <option value="りんご">りんご</option>
+                <option value="メロン">メロン</option>
+                <option value="バナナ">バナナ</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="footer_middlebox">
+          <div class="footer_article__recommended">
+            <i class="fas fa-file-alt fas_1"></i>
+            <p><a href="#" class="footer_article__recommendedText">おすすめの記事</a></p>
+          </div>
+          <div class="footer_article__past">
+            <i class="fas fa-file-alt fas_2"></i>
+            <p><a href="#" class="footer_article__pastText">過去の記事</a></p>
+          </div>
+          <div class="footer_contact">
+            <i class="fas fa-user-circle fas_3"></i>
+            <div class="contact_popupModal1">
+              <input type="radio" name="modalPop" id="contact_pop11" />
+              <label for="contact_pop11" class="footer_contact_button">CONTACT</label>
+              <input type="radio" name="modalPop" id="contact_pop12" />
+              <label for="contact_pop12">CLOSE</label>
+              <input type="radio" name="modalPop" id="contact_pop13" />
+              <label for="contact_pop13">×</label>
+              <div class="contact_modalPopup2">
+                <div class="contact_modalPopup3">
+                  <h2 class="contact_title">お問い合わせ</h2>
+                  <div class="contact_container">
+                    <form class="contact_form">
+                      <div class="contact_input">
+                        <h3>氏名</h3>
+                        <input type="text">
+                        <h3>メールアドレス</h3>
+                        <input type="email">
+                      </div>
+                        <h3>種類</h3>
+                        <select>
+                          <option value="">やってほしい企画</option>
+                          <option value="">応援メッセージ</option>
+                          <option value="">不適切な動画</option>
+                          <option value="">コラボの依頼</option>
+                          <option value="">仕事の依頼</option>
+                          <option value="">その他</option>
+                        </select>
+                        <h3>内容</h3>
+                      <textarea class="mobile_contact_textarea" rows="8" cols="80"></textarea>
+                      <br>
+                      <div class="mobile_contact_submit_wrap">
+                        <input type="submit" class="mobile_contact_submit_button">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_mobile_contact">
+            <i class="fas fa-user-circle fas_3"></i>
+            <div class="mobile_contact_popupModal1">
+              <input type="radio" name="modalPop" id="mobile_contact_pop11" />
+              <label for="mobile_contact_pop11" class="footer_mobile_contact_button">CONTACT</label>
+              <input type="radio" name="modalPop" id="mobile_contact_pop12" />
+              <label for="mobile_contact_pop12">CLOSE</label>
+              <input type="radio" name="modalPop" id="mobile_contact_pop13" />
+              <label for="mobile_contact_pop13">×</label>
+              <div class="mobile_contact_modalPopup2">
+                <div class="mobile_contact_modalPopup3">
+                  <h2 class="mobile_contact_title">お問い合わせ</h2>
+                  <div class="mobile_contact_container">
+                    <form class="mobile_contact_form">
+                      <div class="mobile_contact_input">
+                        <h3>氏名</h3>
+                        <input type="text">
+                        <h3>メールアドレス</h3>
+                        <input type="email">
+                      </div>
+                        <h3>種類</h3>
+                        <select>
+                          <option value="">やってほしい企画</option>
+                          <option value="">応援メッセージ</option>
+                          <option value="">不適切な動画</option>
+                          <option value="">コラボの依頼</option>
+                          <option value="">仕事の依頼</option>
+                          <option value="">その他</option>
+                        </select>
+                        <h3>内容</h3>
+                      <textarea class="mobile_contact_textarea" rows="8" cols="80"></textarea>
+                      <br>
+                      <div class="mobile_contact_submit_wrap">
+                        <input type="submit" class="mobile_contact_submit_button">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottombox">
+          <div class="footer_top">
+            <a href="index.html" class="footer_home"><i class="fas fa-home"></i>HOME</a>
+          </div>
+          <ul class="footer_middle">
+            <li class="footer_listItems"><a href="#">利用規約</a></li>
+            <li class="footer_listItems"><a href="#">プライバシーポリシー</a></li>
+            <li class="footer_listItems"><a href="#">サイトマップ</a></li>
+            <li class="footer_listItems"><a href="#">カテゴリ一覧</a></li>
+            <li class="footer_listItems"><a href="#">タグ一覧</a></li>
+          </ul>
+          <div class="footer_bottom">
+            <p class="footer_copyright">&copy; 2019 Node TECH.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/toPageTop.js"></script>
+  </div>
+  </body>
+</html>

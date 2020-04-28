@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/*all*/
+#page_top{
+  z-index: 95;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: FontAwesome;
+  content: '\f102';
+  color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: red;
+}
+
+#page_top a:hover{
+  opacity: 0.6;
+}
+@media screen and (max-width: 559px) {
+  /*smartPhone*/
+  #page_top{
+    width: 90px;
+    height: 90px;
+  }
+  #page_top a{
+    width: 90px;
+    height: 90px;
+  }
+  #page_top a::before{
+    font-size: 30px;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+  }
+  #page_top a::after{
+    font-size: 17px;
+    top: 45px;
+  }
+}
+
+/*tablet*/
+@media screen and (min-width: 560px) {
+  #page_top{
+    width: 90px;
+    height: 90px;
+  }
+  #page_top a{
+    width: 90px;
+    height: 90px;
+  }
+  #page_top a::before{
+    font-size: 30px;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+  }
+  #page_top a::after{
+    font-size: 17px;
+    top: 45px;
+  }
+}
+
+/*PC*/
+@media screen and (min-width: 960px) {
+  #page_top{
+    width: 90px;
+    height: 90px;
+  }
+  #page_top a{
+    width: 90px;
+    height: 90px;
+  }
+  #page_top a::before{
+    font-size: 30px;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+  }
+  #page_top a::after{
+    font-size: 17px;
+    top: 45px;
+  }
+}

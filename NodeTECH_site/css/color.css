@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+.color_white {
+  color: #ffffff;
+}
+
+.color_black {
+  color: #000000;
+}
+
+.color_yuki {
+  color:  #f15eab;
+}
+
+.color_yamaren {
+color: #00ff00;
+}
+
+.color_kota {
+  color: #ff9300;
+}
+
+.color_morichan {
+color: #0026ff;
+}
+
+.color_yuya {
+color: #ff1e00;
+}
+
+.color_asaki {
+  color: #b85ef1;
+}
+
+.color_takki- {
+  color: #ffff00;
+}
+
+.color_dagon {
+  color: #5ef1d8;
+}
+
+.background_color_white {
+  background-color:  #ffffff;
+}
+
+.background_color_black {
+  background-color:  #000000;
+}
+
+.background_color_yuki {
+  background-color:  #f15eab;
+}
+
+.background_color_yamaren {
+  background-color: #00ff00;
+}
+
+.background_color_kota {
+  background-color: #ff9300;
+}
+
+.background_color_morichan {
+  background-color: #0026ff;
+}
+
+.background_color_yuya {
+  background-color: #ff1e00;
+}
+
+.background_color_asaki {
+  background-color: #b85ef1;
+}
+
+.background_color_takki- {
+  background-color: #ffff00;
+}
+
+.background_color_dagon {
+  background-color: #5ef1d8;
+}
+
+.outline_color_white {
+  text-shadow:0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff,0 0 3px #ffffff;
+}
+
+.outline_color_black {
+  text-shadow:0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000,0 0 3px #000000;
+}
+
+.outline_color_yuki {
+  text-shadow:0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab,0 0 3px #f15eab;
+}
+
+.outline_color_yamaren {
+text-shadow:0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00,0 0 3px #00ff00;
+}
+
+.outline_color_kota {
+  text-shadow:0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300,0 0 3px #ff9300;
+}
+
+.outline_color_morichan {
+text-shadow:0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff,0 0 3px #0026ff;
+}
+
+.outline_color_yuya {
+text-shadow:0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00,0 0 3px #ff1e00;
+}
+
+.outline_color_asaki {
+  text-shadow:0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1,0 0 3px #b85ef1;
+}
+
+.outline_color_takki- {
+  text-shadow:0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00,0 0 3px #ffff00;
+}
+
+.outline_color_dagon {
+  text-shadow:0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8,0 0 3px #5ef1d8;
+}

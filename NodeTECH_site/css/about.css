@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/*all*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+.about_video {
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.about_video_item {
+  width: 100%;
+  height: auto;
+}
+
+.about_video_text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.about_video_text > h2 {
+  font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
+  text-align: center;
+  mix-blend-mode: overlay;
+  color: #fff;
+  font-weight: 800;
+}
+
+.about_video_text > h2:last-child {
+  margin: 0;
+}
+
+.z-index_test1 {
+  text-align:  center;                /* 文字中央揃え */
+  position:  fixed;                   /* 位置指定 */
+  width:  100%;                       /* 幅指定 */
+  max-width: 1400px;
+  box-sizing:  border-box;            /* 崩れ防止 */
+  z-index:  0;                        /* 重なり順指定 */
+  top: 0;                             /* 位置指定 */
+  background-color: #fcf4e5;
+}
+.z-index_test {
+  width: 100%;                         /* 幅指定 */
+  margin:  0 auto;                    /* 要素中央揃え */
+  position:  relative;                /* 位置指定 */
+  z-index:  997;                        /* 重なり順指定 */
+}
+
+#yuki, #yamaren, #kota, #morichan, #yuya, #asaki, #takki-, #dagon, #node_tech {
+  visibility: hidden;
+  display: block;
+}
+
+/*smartPhone*/
+@media screen and (max-width:559px) {
+
+.about_video {
+  /* width: 100%; */
+  padding: 0 0 4em;
+  }
+
+.about_video_text > h2 {
+  font-size: 7vw;
+  margin: 17% auto 0;
+  }
+
+.about_video_text > h2:last-child {
+  font-size: 4vw;
+  }
+
+.z-index_test1 {
+  padding:  10% 0;               /* 余白指定 */
+  }
+.z-index_test {
+  margin-top: 66%;             /* 位置指定 */
+  }
+
+  /* .z-index_test1 {
+    padding:  18% 0 ;
+  }
+  .z-index_test {
+    margin-top: 60%;
+  }*/
+
+#yuki, #yamaren, #kota, #morichan, #yuya, #asaki, #takki-, #dagon, #node_tech {
+  padding-top: 5.3em;
+  margin-top: -5.3em;
+  font-size: 20vw;
+  }
+
+div.main{
+    padding-bottom: 5em;
+  }
+}
+
+/*tablet*/
+@media screen and (min-width: 560px) and (max-width:959px) {
+  .about_video {
+    /* width: 90%; */
+    /* padding: 0 0 4em; */
+  }
+
+  .about_video_text > h2 {
+    font-size: 7vw;
+    margin: 17% auto 0;
+  }
+
+  .about_video_text > h2:last-child {
+    font-size: 4vw;
+  }
+
+  .z-index_test1 {
+    padding:  8.5% 0;               /* 余白指定 */
+  }
+
+  .z-index_test {
+    margin-top: 60%;             /* 位置指定 */
+  }
+
+    .btn-square {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  }
+
+  .btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+
+  #yuki, #yamaren, #kota, #morichan, #yuya, #asaki, #takki-, #dagon, #node_tech {
+    padding-top: 0.3em;
+    margin-top: -0.3em;
+    font-size: 20vw;
+  }
+
+  div.main{
+    padding-bottom: 5em;
+  }
+}
+
+
+/*PC*/
+@media screen and (min-width: 960px) {
+  .about_video {
+    /* width: 90%; */
+    padding: 0 0 4em;
+  }
+
+  .about_video_text > h2 {
+    font-size: 7vw;
+    margin: 17% auto 0;
+  }
+
+  .about_video_text > h2:last-child {
+    font-size: 4vw;
+  }
+
+  .z-index_test1 {
+    padding:  4.6% 0;               /* 余白指定 */
+    }
+  .z-index_test {
+    margin-top: 58.5%;             /* 位置指定 */
+    }
+
+  .btn-square {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  }
+
+  .btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+
+  #yuki, #yamaren, #kota, #morichan, #yuya, #asaki, #takki-, #dagon, #node_tech , #new_movie, #new_column {
+    padding-top: 0.22em;
+    margin-top: -0.22em;
+    font-size: 20vw;
+  }
+  div.main {
+    padding-bottom: 5em;
+  }
+}

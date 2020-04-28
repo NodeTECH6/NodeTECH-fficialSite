@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/*smartPhone*/
+@media screen and (max-width:559px) {
+
+.global-nav {
+  position: fixed;
+  /* right: -320px; これで隠れる */
+  right: -600px;
+  top: 0;
+  /* width: 35vw; スマホに収まるくらい */
+  width: 100%;
+  height: auto;
+  /* padding-top: 40px; */
+  padding: 40px 0;
+  background-color: #3a3a3a;
+  transition: all .4s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  border-radius: 8px;
+}
+
+.hamburger {
+  position: absolute;
+  right: 3%;
+  top: 27%;
+  /* margin-right: 2%;
+  margin-top: 2%; */
+  width: 8vw; /* クリックしやすいようにちゃんと幅を指定する */
+  height: 5vw; /* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.global-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.global-nav__item {
+  /* text-align: center; */
+  /* padding: 0 5%; */
+  padding: 0 10% 5%;
+  /* border-bottom: 1px solid rgb(105, 105, 105); */
+}
+
+.global-nav__item:nth-of-type(6){
+  padding: 0 10% 10%;
+}
+
+.home-button, .about-button, .mobile_contact_popupModal1, .mobile_login_popupModal1 {
+  display: block;
+  /* border-bottom: 4px solid rgb(255, 96, 144);
+  border-radius: 8px; */
+  text-decoration: none;
+  /* color: #111; */
+  font-size: 8vw;
+}
+
+.global-nav__item_fontsize {
+  display: block;
+  /* border-bottom: 4px solid rgb(255, 96, 144);
+  border-radius: 8px; */
+  text-decoration: none;
+  /* color: #111; */
+  font-size: 6.5vw;
+}
+
+.sidebar_category, .sidebar_tag {
+  display: block;
+  text-decoration: none;
+  font-size: 4.5vw;
+}
+
+.global-nav__item a:hover {
+  background-color: #000;
+}
+
+.sidebar_category p {
+  font-weight: bold;
+}
+
+.sidebar_tag p {
+  font-weight: bold;
+}
+
+.hamburger__line {
+  position: absolute;
+  /* left: 11px;
+  width: 18px;
+  height: 1px; */
+  width: 8vw;
+  height: 0.7vw;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: all .6s;
+}
+
+.hamburger__line--1 {
+  /* top: 14px; */
+  top: 40%;
+}
+
+.hamburger__line--2 {
+  /* top: 20px; */
+  top: 80%;
+}
+
+/* .hamburger__line--3 {
+  top: 26px;
+} */
+
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+  right: 0;
+}
+
+.nav-open .black-bg {
+  opacity: .8;
+  visibility: visible;
+}
+
+.nav-open .hamburger__line--1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+.nav-open .hamburger__line--2 {
+  width: 0;
+  left: 50%;
+}
+
+.nav-open .hamburger__line--3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+/* ↓検索バーCSS */
+#form {
+  position:relative;
+  /* max-width:300px; */
+  width: 100%;
+  height: auto;
+  /* margin-bottom:20px; */
+}
+
+#sbox {
+  /* width: 350px;
+  height:50px; */
+  width: 72vw;
+  height:10vw;
+  padding:0 2%;
+  /* position:absolute;
+  left:0;
+  top:0;  */
+  border-radius:8px;
+  outline:0;
+  background:#eee;
+}
+
+#sbtn {
+  height:auto;
+  position:absolute;
+  left: 83%;/*アイコン左右の位置調整*/
+  top: 17%;
+  background:none;
+  color:#666;
+  border:none;
+  font-size: 6vw;/*アイコンサイズ*/
+}
+
+/* ↓カテゴリーCSS */
+.cp_ipselect {
+  overflow: hidden;
+  width: 95%;
+  height: auto;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.sidebar_category__menu, .sidebar_tag__menu {
+  width: 52vw;
+  height:10vw;
+  /* padding:0 2%; */
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.sidebar_category__menu::-ms-expand {
+  display: none;
+}
+
+.sidebar_tag__menu::-ms-expand {
+  display: none;
+}
+
+.cp_ipselect.cp_sl04 {
+  position: relative;
+  /* border: 2px solid #da3c41; */
+  border-radius: 8px;
+  background: #fff;
+}
+
+.cp_ipselect.cp_sl04::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #3a3a3a;
+  pointer-events: none;
+}
+
+/* .cp_ipselect.cp_sl04 select {
+  padding: 8px 38px 8px 8px;
+  color: #3a3a3a;
+} */
+
+}
+
+/*tablet&PC*/
+@media screen and (min-width: 560px) {
+.hamburger {
+  display: none;
+}
+
+.global-nav__list {
+  display: none;
+}
+}
+

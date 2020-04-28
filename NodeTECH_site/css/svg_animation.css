@@ -1,0 +1,67 @@
+@charset "utf-8";
+  .animate1{
+    animation: LeftToRight 0.8s ease;
+  }
+  .animate2{
+    animation: RightToLeft 1.2s ease;
+  }
+  .animate3{
+    animation: FadeIn 1.6s ease;
+  }
+  .animate4{
+    animation: FadeIn 2s ease;
+  }
+
+  /*左から右*/
+  @keyframes LeftToRight {
+    0% {
+      opacity: 0; /* 透明 */
+      transform: translateX(-1500px); /* X軸方向に50px */
+    }
+    100% {
+      opacity: 1; /* 不透明 */
+      transform: translateX(0); /* X軸方向に0px */
+    }
+  }
+
+  /*右から左*/
+  @keyframes RightToLeft {
+    0% {
+      opacity: 0; /* 透明 */
+      transform: translateX(1500px); /* X軸方向に50px */
+    }
+    100% {
+      opacity: 1; /* 不透明 */
+      transform: translateX(0); /* X軸方向に0px */
+    }
+  }
+
+  /*フェードイン*/
+  @keyframes FadeIn {
+    0% {
+      opacity: 0; /* 透明 */
+    }
+    100% {
+      opacity: 1; /* 不透明 */
+    }
+  }
+
+  /*フェードアウト*/
+  /* @keyframes FadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  } */
+
+  .animation1, .animation2, .animation3, .animation4, .animation5, .animation6, .animation7, .animation8, .animation9, .animation10, .animation11, .animation12, .animation13, .animation14, .animation15, .animation16, .animation17, .animation18 {
+    transition-duration: 1s;
+  }
+  .svg_text1, .svg_text2, .svg_text3, .svg_text4, .svg_text5, .svg_text6, .svg_text7, .svg_text8, .svg_text9 {
+    transition-duration: 0.7s;
+  }
+  .svg_content1, .svg_content2, .svg_content3, .svg_content4, .svg_content5, .svg_content6, .svg_content7, .svg_content8, .svg_content9 {
+    transition-duration: 0.7s;
+  }

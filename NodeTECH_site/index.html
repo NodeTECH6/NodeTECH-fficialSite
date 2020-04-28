@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=shift-jis" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    <title>Node TECH.のOfficial_site</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/entry-slider.css" />
+    <link rel="stylesheet" href="css/d-clock.css" />
+    <link rel="stylesheet" href="css/login_pop.css" />
+    <link rel="stylesheet" href="css/contact_pop.css" />
+    <link rel="stylesheet" href="css/toPageTop.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/floatingActionShareButton.css" />
+    <link rel="stylesheet" href="css/svg_animation.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript">
+      var $183 = $.noConflict(true);
+    </script>
+    <script type="text/javascript" src="js/entry-slider.js"></script>
+    <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript" src="js/useMapResponsive.js"></script>
+    <script type="text/javascript" src="js/d-clock.js"></script>
+    <!-- <script type="text/javascript" src="js/footer_category_animation.js"></script> -->
+  </head>
+
+  <body class="home">
+    <div class="container">
+      <header class="header">
+        <div id="page_top"><a href="#"></a></div>
+        <div id="header_container">
+          <div class="header_left">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Node TECH.のロゴ" class="logo"/>
+            </a>
+          </div>
+          <div class="header_center">
+            <a href="about.html#node_tech"><img src="images/icon.png" alt="Node TECH.のアイコン" class="icon"/></a>
+          </div>
+          <div class="header_right">
+            <ul>
+              <li>
+                <a href="index.html" class="home-button">HOME</a>
+              </li>
+              <li>
+                <a href="about.html" class="about-button">ABOUT</a>
+              </li>
+              <li>
+                <div class="contact_popupModal1">
+                  <input type="radio" name="modalPop" id="contact_pop11" />
+                  <label for="contact_pop11" class="contact_button">CONTACT</label>
+                  <input type="radio" name="modalPop" id="contact_pop12" />
+                  <label for="contact_pop12">CLOSE</label>
+                  <input type="radio" name="modalPop" id="contact_pop13" />
+                  <label for="contact_pop13">×</label>
+                  <div class="contact_modalPopup2">
+                    <div class="contact_modalPopup3">
+                      <h2 class="contact_title">お問い合わせ</h2>
+                      <div class="contact_container">
+                        <form class="contact_form">
+                          <div class="contact_input">
+                            <h3>氏名</h3>
+                            <input type="text">
+                            <h3>メールアドレス</h3>
+                            <input type="email">
+                          </div>
+                            <h3>種類</h3>
+                            <select>
+                              <option value="">やってほしい企画</option>
+                              <option value="">応援メッセージ</option>
+                              <option value="">不適切な動画</option>
+                              <option value="">コラボの依頼</option>
+                              <option value="">仕事の依頼</option>
+                              <option value="">その他</option>
+                            </select>
+                            <h3>内容</h3>
+                          <textarea class="contact_textarea" rows="8" cols="80"></textarea>
+                          <br>
+                          <div class="contact_submit_wrap">
+                            <input type="submit" class="contact_submit_button">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="login_popupModal1">
+                  <input type="radio" name="modalPop" id="login_pop11" />
+                  <label for="login_pop11" class="login_button">LOGIN</label>
+                  <input type="radio" name="modalPop" id="login_pop12" />
+                  <label for="login_pop12">CLOSE</label>
+                  <input type="radio" name="modalPop" id="login_pop13" />
+                  <label for="login_pop13">×</label>
+                  <div class="login_modalPopup2">
+                    <div class="login_modalPopup3">
+                      <h2 class="login_title">ログイン画面</h2>
+                      <div class="login_container">
+                        <form class="login_form">
+                          <div class="login_input">
+                            <h3 class="login_id_text">ログインID</h3>
+                            <input type="text">
+                            <h3 class="login_pass_text">パスワード</h3>
+                            <input type="password">
+                          </div>
+                          <br>
+                          <div class="login_submit_wrap">
+                            <input type="submit" onclick="location.href='index.html'" value="ログイン" class="login_submit_button">
+                            <input type="button" onclick="location.href='subscribe.html'" value="新規ユーザー登録" class="login_submit_button">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="global-nav">
+          <ul class="global-nav__list">
+            <li class="global-nav__item">
+              <a href="index.html" class="home-button">HOME</a>
+            </li>
+            <li class="global-nav__item">
+              <a href="about.html" class="about-button">ABOUT</a>
+            </li>
+            <li class="global-nav__item">
+              <div class="mobile_contact_popupModal1">
+                <input type="radio" name="modalPop" id="mobile_contact_pop11" />
+                <label for="mobile_contact_pop11" class="mobile_contact_button">CONTACT</label>
+                <input type="radio" name="modalPop" id="mobile_contact_pop12" />
+                <label for="mobile_contact_pop12">CLOSE</label>
+                <input type="radio" name="modalPop" id="mobile_contact_pop13" />
+                <label for="mobile_contact_pop13">×</label>
+                <div class="mobile_contact_modalPopup2">
+                  <div class="mobile_contact_modalPopup3">
+                    <h2 class="mobile_contact_title">お問い合わせ</h2>
+                    <div class="mobile_contact_container">
+                      <form class="mobile_contact_form">
+                        <div class="mobile_contact_input">
+                          <h3>氏名</h3>
+                          <input type="text">
+                          <h3>メールアドレス</h3>
+                          <input type="email">
+                        </div>
+                          <h3>種類</h3>
+                          <select>
+                            <option value="">やってほしい企画</option>
+                            <option value="">応援メッセージ</option>
+                            <option value="">不適切な動画</option>
+                            <option value="">コラボの依頼</option>
+                            <option value="">仕事の依頼</option>
+                            <option value="">その他</option>
+                          </select>
+                          <h3>内容</h3>
+                        <textarea class="mobile_contact_textarea" rows="8" cols="80"></textarea>
+                        <br>
+                        <div class="mobile_contact_submit_wrap">
+                          <input type="submit" class="mobile_contact_submit_button">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <div class="mobile_login_popupModal1">
+                <input type="radio" name="modalPop" id="mobile_login_pop11" />
+                <label for="mobile_login_pop11" class="mobile_login_button">LOGIN</label>
+                <input type="radio" name="modalPop" id="mobile_login_pop12" />
+                <label for="mobile_login_pop12">CLOSE</label>
+                <input type="radio" name="modalPop" id="mobile_login_pop13" />
+                <label for="mobile_login_pop13">×</label>
+                <div class="mobile_login_modalPopup2">
+                  <div class="mobile_login_modalPopup3">
+                    <h2 class="mobile_login_title">ログイン画面</h2>
+                    <div class="mobile_login_container">
+                      <form class="mobile_login_form">
+                        <div class="mobile_login_input">
+                          <h3 class="mobile_login_id_text">ログインID</h3>
+                          <input type="text">
+                          <h3 class="mobile_login_pass_text">パスワード</h3>
+                          <input type="password">
+                        </div>
+                        <br>
+                        <div class="mobile_login_submit_wrap">
+                          <input type="submit" onclick="location.href='index.html'" value="ログイン" class="mobile_login_submit_button">
+                          <input type="button" onclick="location.href='subscribe.html'" value="新規ユーザー登録" class="mobile_login_submit_button">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <a class="global-nav__item_fontsize" href="index.html#new_movie">
+                最新動画
+              </a>
+            </li>
+            <li class="global-nav__item">
+              <a class="global-nav__item_fontsize" href="index.html#new_column">
+                最新コラム
+              </a>
+            </li>
+            <li class="global-nav__item">
+              <div class="sidebar_search">
+                <form id="form" action="自分のサイトURL" method="get">
+                  <input id="sbox"  id="s" name="s" type="text" placeholder="フリーワードを入力"/>
+                  <button type="submit" id="sbtn"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <div class="sidebar_category">
+                <p><i class="fas fa-globe-asia"></i>カテゴリー</p>
+                <div class="cp_ipselect cp_sl04">
+                  <select id="sidebar_category__menu" class="sidebar_category__menu" name="sidebar_category">
+                    <option value="" hidden>選択してください</option>
+                    <option value="イチゴ">イチゴ</option>
+                    <option value="みかん">みかん</option>
+                    <option value="りんご">りんご</option>
+                    <option value="メロン">メロン</option>
+                    <option value="バナナ">バナナ</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <div class="sidebar_tag">
+                <p><i class="fas fa-tags"></i>タグ</p>
+                <div class="cp_ipselect cp_sl04">
+                  <select id="sidebar_tag__menu" class="sidebar_tag__menu" name="sidebar_tag">
+                    <option value="" hidden>選択してください</option>
+                    <option value="イチゴ">イチゴ</option>
+                    <option value="みかん">みかん</option>
+                    <option value="りんご">りんご</option>
+                    <option value="メロン">メロン</option>
+                    <option value="バナナ">バナナ</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+      </header>
+      <script type="text/javascript" src="js/hunburger.js"></script>
+      <div class="header_padding"></div>
+      <!--entry-slider-->
+      <section class="entry_wrap">
+        <div class="entry_slider slider">
+          <div class="entry_slider_item">
+            <img src="images/header.jpg" alt="Node TECH.のメンバー" width="1008" height="567" usemap="#imageMapSample">
+              <map name="imageMapSample">
+                <area shape="poly" coords="0,0,0,400,10,400,17,385,50,375,83,350,145,325,150,317,197,295,218,279,254,267,293,240,300,223,297,208,305,187,306,178,313,145,325,137,325,115,340,82,365,58,388,29,410,6,410,0,0,0" href="about.html#yuki" alt="yuki" />
+                <area shape="poly" coords="0,570,0,400,10,400,17,385,50,375,83,350,145,325,150,317,197,295,218,279,254,267,293,240,328,269,349,295,366,331,387,358,385,370,402,390,405,403,418,413,422,435,435,447,460,515,468,528,473,540,490,545,490,558,500,570,0,570" href="about.html#yamaren" alt="yamaren" />
+                <area shape="poly" coords="410,0,410,6,388,29,365,58,340,82,325,115,325,137,313,145,306,178,305,187,297,208,300,223,293,240,328,269,349,295,366,331,387,358,424,340,475,320,496,305,521,293,535,290,550,275,565,273,568,270,614,195,625,180,630,170,644,160,649,147,659,139,660,131,680,106,671,56,688,16,688,0,410,0" href="about.html#kota" alt="kota" />
+                <area shape="poly" coords="1009,0,1009,183,930,213,890,240,830,255,772,285,755,288,740,297,690,310,685,305,655,308,635,300,620,305,570,291,565,273,568,270,614,195,625,180,630,170,644,160,649,147,659,139,660,131,680,106,671,56,688,16,688,0,1009,0" href="about.html#yuya" alt="yuya" />
+                <area shape="poly" coords="500,570,490,558,490,545,473,540,468,528,460,515,435,447,422,435,418,413,405,403,402,390,385,370,387,358,424,340,475,320,496,305,521,293,535,290,550,275,565,273,570,291,620,305,635,300,655,308,685,305,690,310,695,320,710,340,735,390,748,413,754,443,758,448,756,461,765,489,770,507,795,542,804,550,820,570,500,570" href="about.html#morichan" alt="morichan" />
+                <area shape="poly" coords="1009,570,1009,183,930,213,890,240,830,255,772,285,755,288,740,297,690,310,695,320,710,340,735,390,748,413,754,443,758,448,756,461,765,489,770,507,795,542,804,550,820,570,1009,570" href="about.html#asaki" alt="asaki" />
+              </map>
+            <!-- <p class="caption">20××-××-××<br>Node TECH.のメンバー</p> -->
+          </div>
+          <div class="entry_slider_item">
+            <img src="images/vtnm2.jpg" alt="ベトナムの水上マーケットにて" width="1134" height="638">
+            <p class="caption">2018-02-08<br>ベトナムの水上マーケットにて</p>
+          </div>
+          <div class="entry_slider_item">
+            <img src="images/vtnm1.jpg" alt="ベトナムのホテルにて" width="1134" height="638">
+            <p class="caption">2018-02-09<br>ベトナムのホテルにて</p>
+          </div>
+          <div class="entry_slider_item">
+            <img src="images/kanto1.jpg" alt="関東地方の百尋の滝にて" width="1134" height="638">
+            <p class="caption">2018-05-18<br>関東地方の百尋の滝にて</p>
+          </div>
+          <div class="entry_slider_item">
+            <img src="images/kanto2.JPG" alt="関東地方の大洗海岸にて" width="1134" height="638">
+            <p class="caption">2018-05-20<br>関東地方の大洗海岸にて</p>
+          </div>
+          <div class="entry_slider_item">
+            <img src="images/chugoku1.jpg" alt="中国地方の常山城跡にて" width="1134" height="638">
+            <p class="caption">2009-07-05<br>中国地方の常山城跡にて</p>
+          </div>
+          <div class="entry_slider_item">
+            <img src="images/chugoku2.jpg" alt="中国地方の三徳山三仏寺にて" width="1134" height="638">
+            <p class="caption">2009-07-06<br>中国地方の三徳山三仏寺にて</p>
+          </div>
+          <div class="entry_slider_item">
+            <img src="images/toron1.jpg" alt="六本木での討論会にて" width="1134" height="638">
+            <p class="caption">2019-10-××<br>六本木での討論会にて</p>
+          </div>
+        </div>
+        <div class="thumb">
+          <div class="thumb_item"><img src="images/header.jpg" alt="20××-××-××"></div>
+          <div class="thumb_item"><img src="images/vtnm2.jpg" alt="2018-02-08"></div>
+          <div class="thumb_item"><img src="images/vtnm1.jpg" alt="2018-02-09"></div>
+          <div class="thumb_item"><img src="images/kanto1.jpg" alt="2018-05-18"></div>
+          <div class="thumb_item"><img src="images/kanto2.JPG" alt="2018-05-20"></div>
+          <div class="thumb_item"><img src="images/chugoku1.jpg" alt="2009-07-05"></div>
+          <div class="thumb_item"><img src="images/chugoku2.jpg" alt="2009-07-06"></div>
+          <div class="thumb_item"><img src="images/toron1.jpg" alt="2019-10-××"></div>
+        </div>
+      </section>
+      <!--/#entry-->
+      <!--/#entry-container-->
+      <div id="date"></div>
+      <div id="msgArea">
+        <div id="msg"></div>
+        <div id="dClock"></div>
+      </div>
+
+        <!-- <div class="sideBar">
+          <div class="recommendMovie">
+
+          </div>
+          <div class="newMovie">
+
+          </div>
+          <div class="recommendColumn">
+
+          </div>
+        </div> -->
+
+        <div class="main">
+          <div id="new_movie"></div>
+          <section class="sec">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+              <polygon class="animation1" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+              <polygon class="animation2" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+              <defs>
+                <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#008ec6" />
+                  <stop offset="0.249" stop-color="#00578a" />
+                  <stop offset="0.512" stop-color="#008dbd" />
+                  <stop offset="1" stop-color="#004673" />
+                </linearGradient>
+                <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#201716" />
+                  <stop offset="0.001" stop-color="#201716" />
+                  <stop offset="0.064" stop-color="#221918" />
+                  <stop offset="0.086" stop-color="#281f1f" />
+                  <stop offset="0.103" stop-color="#322b2a" />
+                  <stop offset="0.116" stop-color="#413b3b" />
+                  <stop offset="0.127" stop-color="#545151" />
+                  <stop offset="0.137" stop-color="#6c6b6d" />
+                  <stop offset="0.145" stop-color="#878a8c" />
+                  <stop offset="0.15" stop-color="#999da0" />
+                  <stop offset="0.161" stop-color="#85888a" />
+                  <stop offset="0.179" stop-color="#6d6e6f" />
+                  <stop offset="0.199" stop-color="#595859" />
+                  <stop offset="0.222" stop-color="#4a4848" />
+                  <stop offset="0.251" stop-color="#3f3c3d" />
+                  <stop offset="0.292" stop-color="#393636" />
+                  <stop offset="0.405" stop-color="#373434" />
+                  <stop offset="0.517" stop-color="#201716" />
+                  <stop offset="0.63" stop-color="#201716" />
+                  <stop offset="0.649" stop-color="#201716" />
+                  <stop offset="0.679" stop-color="#231b1a" />
+                  <stop offset="0.708" stop-color="#2c2625" />
+                  <stop offset="0.736" stop-color="#3c3838" />
+                  <stop offset="0.763" stop-color="#525253" />
+                  <stop offset="0.766" stop-color="#555657" />
+                  <stop offset="0.793" stop-color="#423f3f" />
+                  <stop offset="0.823" stop-color="#332d2d" />
+                  <stop offset="0.859" stop-color="#282120" />
+                  <stop offset="0.906" stop-color="#221918" />
+                  <stop offset="1" stop-color="#201716" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <h2 id="svg_text" class="svg_text1" fill="white">最新動画</h2>
+            <p class="svg_content1">
+              あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+            </p>
+          </section>
+          <div id="new_column"></div>
+          <section class="sec">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+              <polygon class="animation3" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+              <polygon class="animation4" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+              <defs>
+                <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#008ec6" />
+                  <stop offset="0.249" stop-color="#00578a" />
+                  <stop offset="0.512" stop-color="#008dbd" />
+                  <stop offset="1" stop-color="#004673" />
+                </linearGradient>
+                <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#201716" />
+                  <stop offset="0.001" stop-color="#201716" />
+                  <stop offset="0.064" stop-color="#221918" />
+                  <stop offset="0.086" stop-color="#281f1f" />
+                  <stop offset="0.103" stop-color="#322b2a" />
+                  <stop offset="0.116" stop-color="#413b3b" />
+                  <stop offset="0.127" stop-color="#545151" />
+                  <stop offset="0.137" stop-color="#6c6b6d" />
+                  <stop offset="0.145" stop-color="#878a8c" />
+                  <stop offset="0.15" stop-color="#999da0" />
+                  <stop offset="0.161" stop-color="#85888a" />
+                  <stop offset="0.179" stop-color="#6d6e6f" />
+                  <stop offset="0.199" stop-color="#595859" />
+                  <stop offset="0.222" stop-color="#4a4848" />
+                  <stop offset="0.251" stop-color="#3f3c3d" />
+                  <stop offset="0.292" stop-color="#393636" />
+                  <stop offset="0.405" stop-color="#373434" />
+                  <stop offset="0.517" stop-color="#201716" />
+                  <stop offset="0.63" stop-color="#201716" />
+                  <stop offset="0.649" stop-color="#201716" />
+                  <stop offset="0.679" stop-color="#231b1a" />
+                  <stop offset="0.708" stop-color="#2c2625" />
+                  <stop offset="0.736" stop-color="#3c3838" />
+                  <stop offset="0.763" stop-color="#525253" />
+                  <stop offset="0.766" stop-color="#555657" />
+                  <stop offset="0.793" stop-color="#423f3f" />
+                  <stop offset="0.823" stop-color="#332d2d" />
+                  <stop offset="0.859" stop-color="#282120" />
+                  <stop offset="0.906" stop-color="#221918" />
+                  <stop offset="1" stop-color="#201716" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <h2 id="svg_text" class="svg_text2" fill="white">最新コラム</h2>
+            <p class="svg_content2">
+              あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+            </p>
+          </section>
+          <section class="sec">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 170">
+              <polygon class="animation5" points="0 0, 0 170, 946 0" stroke-width="0" stroke="none" fill="url(#627)"/>
+              <polygon class="animation6" points="946 0, 473 85, 946 170" stroke-width="0" stroke="none" fill="url(#152)"/>
+              <defs>
+                <linearGradient id="627" data-name="名称未設定グラデーション 627" y1="70.866" x2="566.929" y2="70.866" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#008ec6" />
+                  <stop offset="0.249" stop-color="#00578a" />
+                  <stop offset="0.512" stop-color="#008dbd" />
+                  <stop offset="1" stop-color="#004673" />
+                </linearGradient>
+                <linearGradient id="152" data-name="名称未設定グラデーション 152" X1="473" y1="70.866" x2="946" y2="70.866" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#201716" />
+                  <stop offset="0.001" stop-color="#201716" />
+                  <stop offset="0.064" stop-color="#221918" />
+                  <stop offset="0.086" stop-color="#281f1f" />
+                  <stop offset="0.103" stop-color="#322b2a" />
+                  <stop offset="0.116" stop-color="#413b3b" />
+                  <stop offset="0.127" stop-color="#545151" />
+                  <stop offset="0.137" stop-color="#6c6b6d" />
+                  <stop offset="0.145" stop-color="#878a8c" />
+                  <stop offset="0.15" stop-color="#999da0" />
+                  <stop offset="0.161" stop-color="#85888a" />
+                  <stop offset="0.179" stop-color="#6d6e6f" />
+                  <stop offset="0.199" stop-color="#595859" />
+                  <stop offset="0.222" stop-color="#4a4848" />
+                  <stop offset="0.251" stop-color="#3f3c3d" />
+                  <stop offset="0.292" stop-color="#393636" />
+                  <stop offset="0.405" stop-color="#373434" />
+                  <stop offset="0.517" stop-color="#201716" />
+                  <stop offset="0.63" stop-color="#201716" />
+                  <stop offset="0.649" stop-color="#201716" />
+                  <stop offset="0.679" stop-color="#231b1a" />
+                  <stop offset="0.708" stop-color="#2c2625" />
+                  <stop offset="0.736" stop-color="#3c3838" />
+                  <stop offset="0.763" stop-color="#525253" />
+                  <stop offset="0.766" stop-color="#555657" />
+                  <stop offset="0.793" stop-color="#423f3f" />
+                  <stop offset="0.823" stop-color="#332d2d" />
+                  <stop offset="0.859" stop-color="#282120" />
+                  <stop offset="0.906" stop-color="#221918" />
+                  <stop offset="1" stop-color="#201716" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <h2 id="svg_text" class="svg_text3" fill="white">最新動画</h2>
+            <p class="svg_content3">
+              あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+            </p>
+          </section>
+          <script src='https://codepen.io/ayausaspirit/pen/xLJQVg.js'></script>
+          <script type="text/javascript" src="js/index_svg_animation.js"></script>
+        </div>
+        <div class="clear"></div>
+      <div class="fabs">
+        <a href="https://www.nicovideo.jp/user/92853960" target="_blank" class="fab1 grey" tooltip="ニコニコ動画"><img
+            class="icon-nikoniko" src="images/nikoniko.png" alt="ニコニコ動画"></a>
+        <a href="" target="_blank" class="fab1 pink" tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/NodeTECH2019?ref_src=twsrc%5Etfw" target="_blank" class="fab1 light-blue"
+          tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCS8JxE06LcjAMMx4YkuwhQQ?sub_confirmation=1" target="_blank" class="fab1 red"
+          tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+        <a target="_blank" class="fas fab1 light-red" tooltip="Share"><i class="fas fa-plus"></i></a>
+      </div>
+
+      <footer class="footer">
+        <div class="footer_topbox">
+          <div class="footer_search">
+            <i class="fas fa-search"></i>
+            <!-- <p class="footer_searchText">検索</p> -->
+            <form id="form" action="自分のサイトURL" method="get">
+              <input id="sbox" id="s" name="s" type="text" placeholder="フリーワードを入力" />
+              <button id="sbtn" type="submit"></button>
+            </form>
+          </div>
+          <div class="footer_category">
+            <i class="fas fa-globe-asia"></i>
+            <p class="footer_categoryText">カテゴリー</p>
+            <div class="cp_ipselect cp_sl04">
+              <select id="footer_category__menu" class="footer_category__menu" name="footer_category">
+                <option value="" hidden>選択してください</option>
+                <option value="イチゴ">イチゴ</option>
+                <option value="みかん">みかん</option>
+                <option value="りんご">りんご</option>
+                <option value="メロン">メロン</option>
+                <option value="バナナ">バナナ</option>
+              </select>
+            </div>
+          </div>
+          <div class="footer_tag">
+            <i class="fas fa-tags"></i>
+            <p class="footer_tagText">タグ</p>
+            <div class="cp_ipselect cp_sl04">
+              <select id="footer_tag__menu" class="footer_tag__menu" name="footer_tag">
+                <option value="" hidden>選択してください</option>
+                <option value="イチゴ">イチゴ</option>
+                <option value="みかん">みかん</option>
+                <option value="りんご">りんご</option>
+                <option value="メロン">メロン</option>
+                <option value="バナナ">バナナ</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="footer_middlebox">
+          <div class="footer_article__recommended">
+            <i class="fas fa-file-alt fas_1"></i>
+            <p><a href="#" class="footer_article__recommendedText">おすすめの記事</a></p>
+          </div>
+          <div class="footer_article__past">
+            <i class="fas fa-file-alt fas_2"></i>
+            <p><a href="#" class="footer_article__pastText">過去の記事</a></p>
+          </div>
+          <div class="footer_contact">
+            <i class="fas fa-user-circle fas_3"></i>
+            <div class="contact_popupModal1">
+              <input type="radio" name="modalPop" id="contact_pop11" />
+              <label for="contact_pop11" class="footer_contact_button">CONTACT</label>
+              <input type="radio" name="modalPop" id="contact_pop12" />
+              <label for="contact_pop12">CLOSE</label>
+              <input type="radio" name="modalPop" id="contact_pop13" />
+              <label for="contact_pop13">×</label>
+              <div class="contact_modalPopup2">
+                <div class="contact_modalPopup3">
+                  <h2 class="contact_title">お問い合わせ</h2>
+                  <div class="contact_container">
+                    <form class="contact_form">
+                      <div class="contact_input">
+                        <h3>氏名</h3>
+                        <input type="text">
+                        <h3>メールアドレス</h3>
+                        <input type="email">
+                      </div>
+                        <h3>種類</h3>
+                        <select>
+                          <option value="">やってほしい企画</option>
+                          <option value="">応援メッセージ</option>
+                          <option value="">不適切な動画</option>
+                          <option value="">コラボの依頼</option>
+                          <option value="">仕事の依頼</option>
+                          <option value="">その他</option>
+                        </select>
+                        <h3>内容</h3>
+                      <textarea class="mobile_contact_textarea" rows="8" cols="80"></textarea>
+                      <br>
+                      <div class="mobile_contact_submit_wrap">
+                        <input type="submit" class="mobile_contact_submit_button">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_mobile_contact">
+            <i class="fas fa-user-circle fas_3"></i>
+            <div class="mobile_contact_popupModal1">
+              <input type="radio" name="modalPop" id="mobile_contact_pop11" />
+              <label for="mobile_contact_pop11" class="footer_mobile_contact_button">CONTACT</label>
+              <input type="radio" name="modalPop" id="mobile_contact_pop12" />
+              <label for="mobile_contact_pop12">CLOSE</label>
+              <input type="radio" name="modalPop" id="mobile_contact_pop13" />
+              <label for="mobile_contact_pop13">×</label>
+              <div class="mobile_contact_modalPopup2">
+                <div class="mobile_contact_modalPopup3">
+                  <h2 class="mobile_contact_title">お問い合わせ</h2>
+                  <div class="mobile_contact_container">
+                    <form class="mobile_contact_form">
+                      <div class="mobile_contact_input">
+                        <h3>氏名</h3>
+                        <input type="text">
+                        <h3>メールアドレス</h3>
+                        <input type="email">
+                      </div>
+                        <h3>種類</h3>
+                        <select>
+                          <option value="">やってほしい企画</option>
+                          <option value="">応援メッセージ</option>
+                          <option value="">不適切な動画</option>
+                          <option value="">コラボの依頼</option>
+                          <option value="">仕事の依頼</option>
+                          <option value="">その他</option>
+                        </select>
+                        <h3>内容</h3>
+                      <textarea class="mobile_contact_textarea" rows="8" cols="80"></textarea>
+                      <br>
+                      <div class="mobile_contact_submit_wrap">
+                        <input type="submit" class="mobile_contact_submit_button">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottombox">
+          <div class="footer_top">
+            <a href="index.html" class="footer_home"><i class="fas fa-home"></i>HOME</a>
+          </div>
+          <ul class="footer_middle">
+            <li class="footer_listItems"><a href="#">利用規約</a></li>
+            <li class="footer_listItems"><a href="#">プライバシーポリシー</a></li>
+            <li class="footer_listItems"><a href="#">サイトマップ</a></li>
+            <li class="footer_listItems"><a href="#">カテゴリ一覧</a></li>
+            <li class="footer_listItems"><a href="#">タグ一覧</a></li>
+          </ul>
+          <div class="footer_bottom">
+            <p class="footer_copyright">&copy; 2019 Node TECH.</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <script type="text/javascript" src="js/toPageTop.js"></script>
+  </body>
+</html>
